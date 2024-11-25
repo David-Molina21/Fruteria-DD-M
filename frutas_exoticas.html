@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="barrasup.css">
+<title>Frutas exoticas</title>
+<br>
+<style>
+    .menu_container{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+    }
+    .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    }
+    .content{
+         min-height: 80px;
+         background:  linear-gradient(
+         90deg,
+         rgba( ) 0%,
+         rgba(0, 15, 213 )70%
+         )
+         
+         ;
+    }
+    .menu {
+        position: absolut;
+        top: 10px;
+        left: 0px; right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        font-size: 25px;
+        color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        
+         
+    }
+    .menu .navbar ul li{
+        position: relative;
+        float: left;
+        
+    }
+    .menu .navbar ul li a{
+        font: size 18px; ;
+        font-family: "Pacifico", cursive;
+               font-weight: 300;
+               font-style: normal;
+        padding: 20px;
+        color: black;
+        display: block;
+    
+    }
+    .menu .navbar ul li a:hover{
+    color:orangered;
+    
+    }
+    #menu{
+        display: none;
+    }
+    .menu-icono{
+        width: 25px; 
+    }
+    .menu label{
+        cursor: pointer;
+        
+    }
+    h1 {
+            text-align: center;
+            color: aqua; /* Color verde oscuro */
+            font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+
+        /* Títulos principales */
+        h2 {
+            color: purple; /* Color verde oscuro */
+            font-family: "Merriweather", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* Subtítulos */
+        h3 {
+            color: blue; /* Color verde más claro */
+            font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+        p{
+            font-family: "Pacifico", cursive;
+           font-weight: 300;
+           font-style: normal;
+        }
+    
+    
+    </style>
+    
+    <div class="content">
+    
+        <div class="menu container">
+        <a href="index.html" class="logo" ><img src="img/logo.png" style="width: 80px;"> Fruteria DD&M </a>
+        <input type="checkbox" id="menu"/>
+        <label for="menu">
+            <img source=" img/logo.png" class="menu_icono" alt="">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html"> Inicio </a></li>
+                    <li><a href="manzan.html"> Manzanas </a></li>
+                    <li><a href="platano.html"> Platanos </a></li>
+                    <li><a href="frutas_exoticas.html"> Frutas exoticas </a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    
+                </ul>
+    
+    
+            </nav>
+    
+        </label>
+        
+        </div>
+        </div>
+
+<body bgcolor="ff1242">
+    <div class="fruta">
+        <h3><b>Rambután</b></h3>
+        <img src="img/rambutan.jpg" alt="Rambután" style="width: 300px; margin: 5px;border-radius: 5px;border-radius: 50px; border: solid 4px orangered;">
+        <p>Fruta tropical exótica con cáscara peluda y pulpa dulce y jugosa.</p>
+        <p>Precio: $8.99 por kg</p>
+        <button class="agregar-carrito" data-fruta="rambutan" data-precio="8.99">Agregar al carrito</button>
+       <a href="https://www.carulla.com" > 
+        
+       <img src="img\iconofruit.png"alt="comprar" style="width: 50px; margin: 2px;">
+       </a>
+    </div>
+    <div class="fruta">
+        <h3><b>Pitahaya</b></h3>
+        <img src="img/pitahaya.jpg" alt="Pitahaya o fruta del dragón" style="width: 250px; margin: 5px;border-radius: 50px; border: solid 4px yellow;">
+        <p>Fruta del dragón con pulpa blanca y semillas negras, rica en antioxidantes.</p>
+        <p>Precio: $6.99 por kg</p>
+        <button class="agregar-carrito" data-fruta="pitahaya" data-precio="6.99">Agregar al carrito</button>
+    </div>
+    <div class="fruta">
+        <h3><b>Carambola</b></h3>
+        <img src="img/carambola.jpg" alt="Carambola o fruta estrella" style="width: 250px; margin: 5px;border-radius: 50px; border: solid 4px yellowgreen">
+        <p>Fruta estrella con sabor agridulce y alto contenido de vitamina C.</p>
+        <p>Precio: $5.99 por kg</p>
+        <button class="agregar-carrito" data-fruta="carambola" data-precio="5.99">Agregar al carrito</button>
+    </div>
+    <div class="fruta">
+        <h3><b>Lichi</b></h3>
+        <img src="img/lichi.jpg" alt="Lichi"style="width: 250px; margin: 5px;border-radius: 50px; border: solid 4px pink">
+        <p>Fruta subtropical con cáscara rosada y pulpa blanca translúcida y aromática.</p>
+        <p>Precio: $9.99 por kg</p>
+        <button class="agregar-carrito" data-fruta="lichi" data-precio="9.99">Agregar al carrito</button>
+    </div>
+    <div class="fruta">
+        <h3><b>Mangostán</b></h3>
+        <img src="img/mangostino.png" alt="Mangostán"style="width: 250px; margin: 5px;border-radius: 50px; border: solid 4px black;">
+        <p>Fruta tropical con cáscara púrpura y pulpa blanca segmentada de sabor exquisito.</p>
+        <p>Precio: $12.99 por kg</p>
+        <button class="agregar-carrito" data-fruta="mangostan" data-precio="12.99">Agregar al carrito</button>
+    </div>
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</head>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="barrasup.css">
+<link rel="stylesheet" href="footerpf.css">
+<title> Proveedores de Frutas</title>
+    <style>
+        /* Título principal centrado */
+        h1 {
+            text-align: center;
+            color: #4CAF50; /* Color verde oscuro */
+            font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+
+        /* Títulos principales */
+        h2 {
+            color: #4CAF50; /* Color verde oscuro */
+            font-family: "Merriweather", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* Subtítulos */
+        h3 {
+            color: orangered; /* Color verde más claro */
+            font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+        p{
+            font-family: "Pacifico", cursive;
+           font-weight: 300;
+           font-style: normal;
+        }
+        .boton-3{
+            display: flex;
+            
+
+        }
+
+        img{
+
+            text-decoration: none;
+            transition: all 2s ease;
+            border-radius: 50px;
+        }
+        img:hover{
+            background-color: blue;
+            color:black;
+            box-shadow: 
+            0 0 5px #3c21ff,
+            0 0 20px #3c21ff,
+            0 0 60px #3c21ff,
+            0 0 150px #3c21ff;
+
+
+        }
+    </style>
+</head>
+<body bgcolor="AED6F1 ">
+    <header>
+        <div class="content">
+
+        <div class="menu container">
+
+        <a href="index.html" class="logo" ><img src="img/logo.png" style="width: 80px;"> Fruteria DD&M </a>
+        <input type="checkbox" id="menu"/>
+        <label for="menu">
+            <img source=" img/logo.png" class="menu-icono" alt="">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html"> Inicio </a></li>
+                    <li><a href="manzan.html"> Manzanas </a></li>
+                    <li><a href="platano.html"> Platanos </a></li>
+                    <li><a href="frutas_exoticas.html"> Frutas exoticas </a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    
+                </ul>
+
+
+            </nav>
+
+        </label>
+        
+        </div>
+        </div>
+        <h1 >> Proveedores de Frutas</h1>
+    </header>
+    <main>
+        <section id="catalogo">
+            <h2>Catálogo de Frutas</h2>
+            <div class="fruta">
+                <h3><b>Manzanas</b></h3>
+                <img src="img/manzanas.jpg" alt="Manzanas rojas" style="width: 250px; margin: 5px;border-radius: 50px; border: solid 4px red;" >
+                <p>Deliciosas manzanas rojas, ricas en antioxidantes y fibra.</p>
+                <p>Precio: $2.99 por kg</p>
+                <a class="agregar-carrito" data-fruta="manzana" data-precio="2.99" href="\manzan.html">Seleccionar una variedad</a>
+            </div>
+            <div class="fruta">
+                <h3><b>Plátanos</b></h3>
+                <img src="img/platanos.jpg" alt="Plátano amarillo" style="width: 250px;border-radius: 50px; margin: 5px; border: solid 4px yellowgreen;">
+                <p>Plátanos dulces y nutritivos, excelente fuente de potasio.</p>
+                <p>Precio: $1.99 por kg</p>
+
+                <a class="agregar-carrito" data-fruta="platano" data-precio="1.99" href="\platano.html">Seleccionar una variedad</a>
+
+            </div>
+            <div class="fruta">
+                <h3><b>Frutas exoticas</b></h3>
+                <img src="img/exotics.jpg" alt="exotico" style="width: 300px; height: 300px;margin: 5px;border-radius: 5px;border-radius: 50px; border: solid 4px orangered;">
+                <p>Frutas tropicales exóticas y unicas con sabores sorprendentes </p>
+                <p>Precio: Dependiendo la variedad</p>
+                <button class="agregar-carrito" data-fruta="exoticas" data-precio="8.99">Agregar al carrito</button>
+                <a href="frutas_exoticas.html">Seleccionar una variedad</a>
+              
+                
+             
+            </div>
+            
+        </section>
+    
+        <section id="ubicaciones">
+            <h2>Puntos Físicos</h2>
+            <div id="mapa">
+               
+            </div>
+            <div class="boton-3"></div>
+            <ul>
+                <li>
+                 
+                    <h3>Tienda Centro</h3>
+                    
+                    <p>Dirección: Calle Principal 27, Ciudad Bogotá</p>
+                
+                    <p>Teléfono: (123) 456-7890</p>
+                    
+                    <p>Horario: Lunes a Sábado, 9:00 AM - 8:00 PM</p> <a href="Tienda-centro.html" > 
+                        
+                        <img src="img\iconofruit.png"alt="ubicacion" id="tiendas" style="width: 100px; margin: 2px;">
+                        </a>
+                    
+                </li>
+                <li>
+                    <h3>Tienda Norte</h3>
+                    <p>Dirección: Carrera 16# 53-17, Ciudad Bogotá</p>
+                    <p>Teléfono: (123) 456-7891</p>
+                    <p>Horario: Lunes a Domingo, 8:00 AM - 9:00 PM</p>
+                    <a href="Tienda-norte.html" > 
+                        <img src="img\iconofruit.png"alt="ubicacion" id="tiendas"style="width: 100px; margin: 2px;">
+                        </a>
+                </li>
+                <li>
+                    <h3>Tienda Sur</h3>
+                    <p>Dirección: Calle 8 Sur #37-2 a 37-54 Ciudad Bogotá</p>
+                    <p>Teléfono: (123) 456-7892</p>
+                    <p>Horario: Lunes a Viernes, 10:00 AM - 7:00 PM</p>
+                    <a href="Tienda-sur.html" > 
+                        <img src="img\iconofruit.png"alt="ubicacion" id="tiendas" style="width: 100px; margin: 2px;">
+                        </a>
+                </li>
+                <li>
+                    <h3>Tienda Oriente</h3>
+                    <p>Dirección: Transversal 78d# 10b-06,</p>
+                    <p>Teléfono: (123) 456-7893</p>
+                    <p>Horario: Lunes a Sábado, 8:00 AM - 8:00 PM</p>
+                    <a href="Tienda-oriente.html" > 
+                        <img src="img\iconofruit.png"alt="ubicacion" id="tiendas" style="width: 100px; margin: 2px;">
+                        </a>
+                </li>
+                <li>
+                    <h3>Tienda Occidente</h3>
+                    <p>Dirección: Avenida Oeste 345, Ciudad Bogotá</p>
+                    <p>Teléfono: (123) 456-7894</p>
+                    <p>Horario: Lunes a Domingo, 9:00 AM - 9:00 PM</p>
+                </li>
+                <li>
+                    <h3>Tienda Centro Histórico</h3>
+                    <p>Dirección: Plaza Mayor 567, Ciudad Medellin</p>
+                    <p>Teléfono: (123) 456-7895</p>
+                    <p>Horario: Lunes a Domingo, 10:00 AM - 10:00 PM</p>
+                </li>
+                <li>
+                    <h3>Tienda Aeropuerto</h3>
+                    <p>Dirección: Terminal 1, Aeropuerto Nacional Perales, Ciudad Ibagué</p>
+                    <p>Teléfono: (123) 456-7896</p>
+                    <p>Horario: Todos los días, 24 horas</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footerpgf">
+        <footer class="footer">
+            <ul class="social-icon">
+                <li class="icon-elem">
+                    <a href="https://github.com/David-Molina21" class="icon">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                
+
+                </li>
+            </ul>
+            <ul class="social-icon">
+                <li class="icon-elem">
+                    <a href="https://github.com/Madro014" class="icon">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                
+
+                </li>
+            </ul>
+        
+        <ul class="menuf">
+        <li class="menuf-elements">
+          <a href="" class= "menuf-icon"> Inicio </a>
+        </li>
+        
+        <li class="menuf-elements">
+          <a href="" class= "menuf-icon"> Jose David Molina Daza </a>
+        </li>
+        <li class="menuf-elements">
+            <a href="" class= "menuf-icon"> David Leonardo Madroñero Garzon </a>
+          </li>
+        </ul>
+        <p class="text"> @2024 | Todos los derechos reservados</p>
+
+
+
+        </footer>
+    </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        </section>
+
+       
+            </div>
+        </section>
+    </main>
+</body>
+</html>

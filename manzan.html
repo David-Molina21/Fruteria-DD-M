@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="barrasup.css">
+    <title>Manzanas</title>
+    <br>
+    <style>
+        .menu_container{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        
+        }
+        .content{
+             min-height: 80px;
+             background:  linear-gradient(
+             90deg,
+             rgba(117, 255, 246 ) 0%,
+             rgba(0, 15, 213 )70%
+             )
+             
+             ;
+        }
+        .menu {
+            position: absolut;
+            top: 10px;
+            left: 0px; right: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            font-size: 25px;
+            color: wheat;
+            text-transform: uppercase;
+            font-weight: bold;
+            
+             
+        }
+        .menu .navbar ul li{
+            position: relative;
+            float: left;
+            
+        }
+        .menu .navbar ul li a{
+            font: size 18px; ;
+            font-family: "Pacifico", cursive;
+                   font-weight: 300;
+                   font-style: normal;
+            padding: 20px;
+            color: wheat;
+            display: block;
+        
+        }
+        .menu .navbar ul li a:hover{
+        color:orangered;
+        
+        }
+        #menu{
+            display: none;
+        }
+        .menu-icono{
+            width: 25px; 
+        }
+        .menu label{
+            cursor: pointer;
+            
+        }
+        h1 {
+            text-align: center;
+            color: aqua; /* Color verde oscuro */
+            font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+
+        /* Títulos principales */
+        h2 {
+            color: purple; /* Color verde oscuro */
+            font-family: "Merriweather", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* Subtítulos */
+        h3 {
+            color: blue; /* Color verde más claro */
+            font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+        p{
+            font-family: "Pacifico", cursive;
+           font-weight: 300;
+           font-style: normal;
+        }
+        
+        
+        
+        </style>
+        
+        <div class="content">
+        
+            <div class="menu container">
+            <a href="index.html" class="logo" ><img src="img/logo.png" style="width: 80px;"> Fruteria DD&M </a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img source=" img/logo.png" class="menu_icono" alt="">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html"> Inicio </a></li>
+                        <li><a href="manzan.html"> Manzanas </a></li>
+                        <li><a href="platano.html"> Platanos </a></li>
+                        <li><a href="exoticas.html"> Frutas exoticas </a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        
+                    </ul>
+        
+        
+                </nav>
+        
+            </label>
+            
+            </div>
+            </div>
+</head>
+<body bgcolor="4CAF50" >
+    <h2 style="color:aqua;"> Tipos de manzanas </h2>
+    <a class= "btn" href="\proyectitoooo\index.html"> volver</a>
+    <h3 style="color:blue;"> Manzana verde </h3>
+
+    <img src="img/mzn-verde.png" alt="Manzanas rojas" style="width: 250px; margin: 5px;border-radius: 50px; border: solid 4px green;" >
+    <p>Ácida y una muy buena fuente de energia</p>
+    <p>Precio: $1.99 por kg</p>
+    <button class="agregar-carrito" data-fruta="manzana">Agregar al carrito</button>
+
+    <h3 style="color:blue;"> Manzana roja </h3>
+    <img src="img/manzanas.jpg" alt="Manzanas rojas" style="width: 250px; margin: 5px;border-radius: 50px; border: solid 4px red;" >
+    <p>Beneficios antioxidantes y buena fuente de vitmina c</p>
+    <p>Precio: $1.99 por kg</p>
+    <button class="agregar-carrito" data-fruta="manzana">Agregar al carrito</button>
+
+    <h3 style="color:blue;"> Manzana amarilla </h3>
+    <img src="img/mzn-amarilla.jpg" alt="Manzanas rojas" style="width: 250px; margin: 5px;border-radius: 50px; border: solid 4px yellow;" >
+    <p>Excelentes propiedades dieteticas e hidratantes por estar conformada por un 85% de agua en su composicion</p>
+    <p>Precio: $1.99 por kg</p>
+    <button class="agregar-carrito" data-fruta="manzana">Agregar al carrito</button>
+
+</body>
+</html>
